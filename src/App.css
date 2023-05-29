@@ -1,0 +1,32 @@
+header, footer{
+  @apply py-3 bg-black text-white;
+}
+.logo{
+  @apply w-12;
+}
+h1{
+  @apply font-semibold text-3xl uppercase text-center mb-8;
+}
+.checkout-row{
+  @apply flex flex-wrap gap-4 my-4;
+}
+.checkout-row div{
+  @apply w-full;
+}
+.cart-row{
+  @apply flex flex-wrap gap-10 items-center py-4;
+}
+@screen sm{
+  .checkout-row{
+    @apply flex-nowrap;
+  }
+  .checkout-row div{
+    @apply w-1/2;
+  }
+  .cart-row{
+    @apply flex-nowrap;
+  }
+}
+.cart-row + .cart-row{
+  @apply border-t border-gray-400;
+}
